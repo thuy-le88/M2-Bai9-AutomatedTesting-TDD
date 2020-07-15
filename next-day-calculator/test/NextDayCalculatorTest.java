@@ -13,7 +13,8 @@ public class NextDayCalculatorTest {
         int month=1;
         int year=2018;
         String expected="2-1-2018";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDay1=new NextDayCalculator(day,month,year);
+        String result=nextDay1.nextDay();
         assertEquals(expected,result);
     }
 
@@ -24,7 +25,8 @@ public class NextDayCalculatorTest {
         int month=1;
         int year=2018;
         String expected="1-2-2018";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDayCalculator=new NextDayCalculator(day,month,year);
+        String result=nextDayCalculator.nextDay();
         assertEquals(expected,result);
     }
 
@@ -35,7 +37,8 @@ public class NextDayCalculatorTest {
         int month=4;
         int year=2018;
         String expected="1-5-2018";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDayCalculator=new NextDayCalculator(day,month,year);
+        String result=nextDayCalculator.nextDay();
         assertEquals(expected,result);
     }
 
@@ -46,7 +49,8 @@ public class NextDayCalculatorTest {
         int month=2;
         int year=2018;
         String expected="1-3-2018";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDayCalculator=new NextDayCalculator(day,month,year);
+        String result=nextDayCalculator.nextDay();
         assertEquals(expected,result);
     }
 
@@ -57,7 +61,8 @@ public class NextDayCalculatorTest {
         int month=2;
         int year=2020;
         String expected="1-3-2020";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDayCalculator=new NextDayCalculator(day,month,year);
+        String result=nextDayCalculator.nextDay();
         assertEquals(expected,result);
     }
 
@@ -68,7 +73,8 @@ public class NextDayCalculatorTest {
         int month=12;
         int year=2018;
         String expected="1-1-2019";
-        String result=NextDayCalculator.nextDay(day,month,year);
+        NextDayCalculator nextDayCalculator=new NextDayCalculator(day,month,year);
+        String result=nextDayCalculator.nextDay();
         assertEquals(expected,result);
     }
 
